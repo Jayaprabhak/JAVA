@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="maadharTest(failed)">
+    <classes>
+      <class name="com.simplilearn.demo.mAadharTest">
+        <methods>
+          <include name="Admin"/>
+          <include name="User"/>
+        </methods>
+      </class> <!-- com.simplilearn.demo.mAadharTest -->
+    </classes>
+  </test> <!-- maadharTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

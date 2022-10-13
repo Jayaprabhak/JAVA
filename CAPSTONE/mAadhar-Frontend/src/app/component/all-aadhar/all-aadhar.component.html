@@ -1,0 +1,35 @@
+<table class = "table table-striped table-bordered text-center">
+    <thead>
+        <tr>
+            
+            <th> Name</th>
+            <th> DOB </th>
+            <th> Gender</th>
+            <th> Mobile</th>
+            <th> Aadhar Number</th>
+            <th> House number</th>
+            <th> Street</th>
+            <th> District</th>
+            <th> State</th>
+            <th> Pincode</th>
+            <th> Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let a of aadhar" >
+          
+            <td> {{ a.name }} </td>
+            <td> {{ a.dob }} </td>
+            <td> {{ a.gender }} </td>
+            <td> {{ a.mobilenumber }} </td>
+            <td> {{ a.aadharnumber }} </td>
+            <td> {{ a.housenumber }} </td>
+            <td> {{ a.street }} </td>
+            <td> {{ a.district }} </td>
+            <td> {{ a.state }} </td>
+            <td> {{ a.pincode }} </td>
+            <td> <button (click)="deleteAadhar(a.aadharnumber)">Delete</button></td>
+        </tr>
+    </tbody>
+  </table>
+  <button (click) = "Back()" class = "btn btn-primary btn-sm" style="margin-left: 10px"> Back</button>

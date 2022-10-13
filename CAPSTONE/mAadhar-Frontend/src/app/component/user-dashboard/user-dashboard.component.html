@@ -1,0 +1,72 @@
+<div class="container row" style="margin:30px ;">
+    <div class="col">
+        <b>MAadhar</b> 
+    </div>
+    <div class="col">
+        <button (click)="applyAadhar()">Apply for a new Aadhar card</button>
+    </div>
+    <div class="col">
+        <button class="btn btn-outline-success" (click)="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="jumbotron" >
+    <form action="" >
+        <div >
+            <label for="floatingPassword">Aadhar Number</label>
+            <input type="text" class="form-control" placeholder="Aadhar Number" name="aadharnumber"
+                [(ngModel)]="aadharnumber">
+        </div>
+        <div style="text-align:center ;">
+            <button class="btn btn-outline-success " type="button" (click)="submit(aadharnumber)">Submit</button>
+        </div>
+
+
+        <div>
+
+            <div class="jumbotron">
+                <h3 style="margin-top: 30px;">Aadhar Details</h3>
+                <div>
+                    <label> <b> Name: </b></label> {{aadhar.name}}
+                </div>
+                <div>
+                    <label> <b> DoB: </b></label> {{aadhar.dob}}
+                </div>
+                <div>
+                    <label> <b> Gender: </b></label> {{aadhar.gender}}
+                </div>
+                <div>
+                    <label> <b> Mobile: </b></label> {{aadhar.mobilenumber}}
+                </div>
+                <div>
+                    <label> <b> House: </b></label> {{aadhar.housenumber}}
+                </div>
+                <div>
+                    <label> <b> Street: </b></label> {{aadhar.street}}
+                </div>
+                <div>
+                    <label> <b> District: </b></label> {{aadhar.district}}
+                </div>
+                <div>
+                    <label> <b> State: </b></label> {{aadhar.state}}
+                </div>
+                <div>
+                    <label> <b> Pincode: </b></label> {{aadhar.pincode}}
+                </div>
+
+            </div>
+
+            
+            <div>
+                <button (click)="updateAadhar(aadharnumber)">Update Aadhar details</button>
+            </div><br>
+            <div>
+                <button (click)="duplicateAadhar(aadharnumber)">Duplicate Aadhar card</button>
+            </div><br>
+            <div>
+                <button (click)="deleteAadhar(aadharnumber)">Close Aadhar card</button>
+            </div><br>
+
+        </div>
+    </form>
+</div>

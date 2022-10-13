@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <b>MAadhar</b> 
+    <div class="row">
+      
+        <div class="col-md-4 mt-3 mb-2">
+            <h3 class="text-success text-center"><b>Applying for new Aadhar </b></h3>
+
+            <form action="" class="mt-5 p-5">
+                <div class="form-floating mb-3">
+                    <label for="floatingInput">Name</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Name" name="name" [(ngModel)]="name">
+                </div>
+                <div class="form-floating mb-3">
+                    <label for="floatingInput">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" placeholder="Date of Birth" name="dob" [(ngModel)]="dob">
+                </div>
+                <div class="form-floating mb-3">
+                    <label for="floatingSelect">Gender</label><br>
+                    <select class="form-select" id="floatingSelect" aria-label="gender" name="gender" [(ngModel)]="gender">
+                      <option *ngFor="let r of genders" [value]="r">{{r}}</option>
+                    </select>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label for="floatingInput">Mobile Number</label>
+                    <input type="number" class="form-control" id="mobile" placeholder="Mobile Number" name="mobile" [(ngModel)]="mobilenumber">
+                </div>
+                <div class="form-floating mb-3">
+                    <label for="floatingInput">House Number</label>
+                    <input type="text" class="form-control" id="houseno" placeholder="House Number" name="houseno" [(ngModel)]="housenumber">
+                </div>
+                <div class="form-floating mb-3">
+                    <label for="floatingInput">Street</label>
+                    <input type="text" class="form-control" id="street" placeholder="Street" name="street" [(ngModel)]="street">
+                </div>
+                  <div class="form-floating mb-3">
+                    <label for="floatingPassword">District</label>
+                    <input type="text" class="form-control" id="district" placeholder="District" name="district" [(ngModel)]="district">
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label for="floatingPassword">State</label>
+                    <input type="text" class="form-control" id="state" placeholder="State" name="state" [(ngModel)]="state">
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label for="floatingPassword">Pincode</label>
+                    <input type="number" class="form-control" id="pincode" placeholder="Pincode" name="pincode" [(ngModel)]="pincode">
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success me-md-2" type="button" (click)="applyAadhar()" >Register</button>
+                  </div>
+
+            </form>
+        </div>
+        
+    </div>
+</div>

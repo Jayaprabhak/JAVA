@@ -1,0 +1,54 @@
+
+<div class="container-fluid" style="margin:30px ;">
+  <b>MAadhar</b> 
+    <div class="row">
+        <div class="col-md-4 mt-3 mb-2">
+            <form >
+                <h5 class="text-primary mb-3">Update Details </h5>
+                <div class="form-floating mb-3">
+                  <label >Name</label>
+                    <input type="text" class="form-control"  placeholder="Name" name="name" [(ngModel)]="aadhar.name" >
+                </div>
+                  <div class="form-floating mb-3">
+                    <label >Date of Birth</label>
+                    <input type="date" class="form-control"  name="dob" [(ngModel)]="aadhar.dob">
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label >Gender</label>
+                    <select class="form-select" id="floatingSelect" aria-label="gender" name="gender" [(ngModel)]="aadhar.gender">
+                      <option *ngFor="let r of genders" [value]="r">{{r}}</option>
+                    </select>                  </div>
+                  <div class="form-floating mb-3">
+                    <label >Mobile Number</label>
+                      <input type="text" class="form-control"  placeholder="Mobile Number" name="mobilenumber" [(ngModel)]="aadhar.mobilenumber" >
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label >House Number</label>
+                      <input type="text" class="form-control"  placeholder="House Number" name="housenumber" [(ngModel)]="aadhar.housenumber" >
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label >Street</label>
+                      <input type="text" class="form-control"  placeholder="Street" name="street" [(ngModel)]="aadhar.street" >
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label >District</label>
+                      <input type="text" class="form-control"  placeholder="District" name="district" [(ngModel)]="aadhar.district" >
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label >State</label>
+                      <input type="text" class="form-control"  placeholder="State" name="state" [(ngModel)]="aadhar.state" >
+                  </div>
+                  <div class="form-floating mb-3">
+                    <label >Pincode</label>
+                      <input type="text" class="form-control"  placeholder="Pincode" name="pincode" [(ngModel)]="aadhar.pincode" >
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success me-md-2" type="button" (click)="submit()" >Submit</button>
+                  </div>
+            </form>
+ 
+        </div>
+        
+    </div>
+</div>
